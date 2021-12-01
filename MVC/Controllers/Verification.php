@@ -13,7 +13,7 @@ class Verification extends Controller{
             $checkstatus=$this->UserModel->CheckStatusUser($token);
             $this->view("Verification",[
             "result"=>$checkstatus
-        ]);
+            ]);
         }else{
             $this->view("Verification");
         }
